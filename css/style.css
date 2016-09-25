@@ -1,0 +1,94 @@
+/* General Styling */
+*{
+  box-sizing: border-box;
+  <!--this rule allows you to add height to your boxes, clearing the default height first (reset)-->
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3, .btn {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #1bbc9b;
+    padding: 10px 30px;
+    border-radius: 3px;
+    <!--rounds the edges-->
+    display: inline-block;
+    <!--something about spacing-->
+
+    /*padding: 10px 20px 30px 40px <!--(top, right, bottom, left)-->*/
+    <!--adds padding to all 4 sides. 10px to top and bottom, left and right, 30px-->
+
+    <!--can now apply this class to all buttons you want-->
+}
+
+section {
+  padding: 40px 30px;
+}
+
+/*Navigational Styling*/
+
+nav{
+  background: black;
+  padding-left: 10px;
+  padding-right: 20px;
+  <!--if there is spacing error, use inspect to try and catch it-->
+}
+
+nav ul{
+  padding: 0;
+  float: right;
+  margin-top: 40px;
+  <!--align right-->
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 10px;
+  <!--in a row, instead of top to bottom-->
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/*Header Styling*/
+header {
+  background: black url(../images/header-bg.jpg) center no-repeat;
+  color: white;
+  text-align: center;
+  height: 600px;
+  padding-top: 150px;
+}
+
+header h2 {
+  margin-bottom: 20px;
+}
+
+/* Features styling */
+.features {
+  text-align: center;
+}
+
+.features article {
+  width: 24%;
+  display: inline-block;
+  /* Error: Solved. Had not closed an article */
+}
+
+.features article .btn {
+  color: #1bbc9b;
+  background: white;
+  border: 1px solid #1bbc9b;
+}
+
+/* Mockup Section */

@@ -1,0 +1,76 @@
+/*
+  *{
+  border: 2px dotted
+  <!--margins (yellow select) are between content, padding (green select) is within content-->
+}*/
+
+  p, h1, h2 {
+      font-family: sans-serif;
+      color: #ccc;
+      <!--hexidecimal colours;-->
+      font-size: 14px;
+      <!--end every rule with;-->
+      <!--everything wrapped with <p>, h1 and h2 will be changed to sans serif-->
+      <!--right click chrome, inspect, arrow symbol, select things and test out stuff in the bottom panel, without affecting the actual file-->
+  }
+
+nav img{
+  border: 1px solid red;
+}
+
+ul li {
+  font-size: 24px;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: purple;
+}
+
+h1 {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+h2{
+  line-height: 1.4
+}
+
+header {
+  background: yellowgreen url(../images/header-bg.jpg) center no-repeat;
+  background-size: cover;
+  height: 400px;
+
+  /*background-image: url(../images/header-bg.jpg);
+  height: 400px;
+  background-position: center center;
+  background-size: cover;*/
+  <!-- position: x co-ordinate, y co-ordinate e.g. center top -->
+  <!-- cmd+ / to disable code -->
+  /*background-color: yellowgreen;*/
+}
+
+section {
+  background: tomato;
+}
+
+.features {
+  background: purple;
+  <!-- if it is a class, need to add a dot before e.g: .features -->
+  <!-- Class benefit: it is repeatable. Can have a certain style for a class, then just name segments = that class -->
+}
+
+.hotpink {
+  color: hotpink;
+  <!-- You can also double up classes -->
+  <!-- color applies to font -->
+  <!-- CSS reads top down, therefore commands at the bottom will override commands at the top.
+  THEREFORE: generic rules at the top, then specific rules and exceptions at the bottom, to override -->
+
+  <!-- The Box Model: every thing is in a box, see border -->
+}

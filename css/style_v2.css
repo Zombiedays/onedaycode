@@ -1,0 +1,196 @@
+/* General Styling */
+*{
+  box-sizing: border-box;
+  <!--this rule allows you to add height to your boxes, clearing the default height first (reset)-->
+  <!--padding = within boxes, margin = between boxes-->
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3, .btn {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #1bbc9b;
+    padding: 10px 30px;
+    border-radius: 3px;
+    transition: all .2s ease;
+    <!--rounds the edges-->
+    display: inline-block;
+    <!--inline cannot add margins and spacing, but inline-block allows you-->
+
+    /*padding: 10px 20px 30px 40px <!--(top, right, bottom, left)-->*/
+    <!--adds padding to all 4 sides. 10px to top and bottom, left and right, 30px-->
+
+    <!--can now apply this class to all buttons you want-->
+}
+
+section {
+  padding: 40px 30px;
+}
+
+/*Navigational Styling*/
+
+nav{
+  background: black;
+  padding-left: 10px;
+  padding-right: 20px;
+  <!--if there is spacing error, use inspect to try and catch it-->
+}
+
+nav ul{
+  padding: 0;
+  float: right;
+  margin-top: 40px;
+  <!--align right-->
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 10px;
+  <!--in a row, instead of top to bottom-->
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/*Header Styling*/
+header {
+  background: black url(../images/header-bg.jpg) center no-repeat;
+  color: white;
+  text-align: center;
+  height: 600px;
+  padding-top: 150px;
+}
+
+header h2 {
+  margin-bottom: 20px;
+}
+
+/* Features styling */
+.features {
+  text-align: center;
+}
+
+.features article {
+  width: 24%;
+  display: inline-block;
+  /* Makes it into columns */
+  /* Error: Solved. Had not closed an article */
+}
+
+.features article .btn {
+  color: #1bbc9b;
+  background: white;
+  border: 1px solid #1bbc9b;
+}
+
+/* Mockup Section */
+.mockup {
+  background: black url(../images/mockup-bg.jpg) center no-repeat;
+  background-attachment: fixed;
+  /* so background doesn't move when you scroll */
+  color: white;
+  text-align: center;
+  /*height: 600px;
+  padding-top: 50px;*/
+}
+
+/* Clients Section */
+.clients {
+  background: #1bbc9b;
+  text-align: center;
+  color: white;
+  /*height: 320px;*/
+  /*padding: 40px 0px;*/
+}
+
+/*.clients h2 {
+  margin-top: 0px;
+}*/
+
+.clients ul li {
+  width: 18%;
+  display: inline-block;
+  /* modify the way list is displayed (instead of bulleted list) */
+  /*margin-bottom: 20px;*/
+}
+
+.clients ul li img {
+  max-width: 150px;
+  /* within image, don't need inline block */
+}
+
+.clients .btn {
+  border: 1px solid white;
+  /*display: block;
+  /* makes this take up the whole line */
+  /*width: 200px;*/
+  /* limits the button size so it doesn't fill the whole line*/
+}
+
+.clients .btn:hover {
+  background: white;
+  color: #1bbc9b;
+}
+
+/* Footer Section */
+footer{
+  background: black;
+  text-align: center;
+  padding: 30px 0;
+  /*height: 300px;
+  padding-top: 50px;*/
+}
+
+footer ul {
+  padding: 0;
+  /* Footer UL, get rid of auto padding */
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer ul li img {
+  max-width: 30px;
+  transition: opacity .2s ease;
+}
+
+footer ul li img:hover {
+  opacity: .5;
+}
+
+/* Check compatibility with other devices. Inspect: button on the left that looks like a phone */
+
+/* Media Queries */
+@media (max_width: 768px) {
+  /*ipad width*/
+  nav {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  nav ul {
+    float: none;
+  }
+
+  .features article {
+    width: 100%;
+    display: block;
+  }
+
+  .mockup img {
+      max-width: 100%;
+  }
+
+}
